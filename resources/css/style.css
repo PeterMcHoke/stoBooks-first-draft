@@ -1,0 +1,345 @@
+@import "compass/css3";
+@import "compass/reset";
+@import "compass/css3";
+
+/* Colors */
+/* ---------------------------------------- */
+
+.controls {
+  text-align: left;
+  position: relative;
+	width: 95%;
+}
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="tel"],
+.controls textarea,
+.controls button,
+.controls select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #c6c6c6;
+  width: 100%;
+  margin-bottom: 18px;
+  color: #888;
+  font-family: 'Lato', 'sans-serif';
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #fff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.controls input[type="text"]:focus, .controls input[type="text"]:hover,
+.controls input[type="email"]:focus,
+.controls input[type="email"]:hover,
+.controls input[type="tel"]:focus,
+.controls input[type="tel"]:hover,
+.controls textarea:focus,
+.controls textarea:hover,
+.controls button:focus,
+.controls button:hover,
+.controls select:focus,
+.controls select:hover {
+  outline: none;
+  border-color: #9FB1C1;
+}
+.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+.controls input[type="email"]:focus + label,
+.controls input[type="email"]:hover + label,
+.controls input[type="tel"]:focus + label,
+.controls input[type="tel"]:hover + label,
+.controls textarea:focus + label,
+.controls textarea:hover + label,
+.controls button:focus + label,
+.controls button:hover + label,
+.controls select:focus + label,
+.controls select:hover + label {
+  color: #077ABC;
+  cursor: text;
+}
+.controls .fa-sort {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  color: #999;
+}
+.controls select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.controls label {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+  transition: color 0.3s, top 0.3s, background-color 0.8s;
+}
+.controls label.active {
+  top: -11px;
+  color: #555;
+  background-color: white;
+}
+.controls textarea {
+  resize: none;
+  height: 200px;
+}
+.controls button {
+  cursor: pointer;
+  background-color: #ffbf00;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+}
+.controls button:hover {
+  background-color: black;
+}
+
+/*My CSS*/
+body {
+  font-family: 'Comfortaa', sans-serif;
+  text-align: center;
+  background-color: #ffbf00;
+  position:relative;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  /*Shape*/
+  width: 100%;
+  height:200px;
+  line-height: 200px;
+  position: fixed;
+  /*Design*/
+  background-color: #ffbf00;
+}
+
+.header-logo-new {
+  height: 250px;
+  width: auto;
+  margin-top: -25px;
+}
+.navigation{
+  /*Shape*/
+  width:100%;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  top:200px;
+  margin-bottom: -60px;
+  z-index: 150;
+
+  /*Design*/
+  text-align: center;
+  font-size: 24px;
+  background-color: #ffbf00;
+  box-shadow: 0 2px 3px rgba( 0, 0, 0, 0.5);
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  padding-bottom: 20px;
+}
+
+.navigation nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0px 15px;
+
+}
+
+.nav-link:hover {
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.filler {
+  width:100%;
+  height:300vh;
+  padding-top:200px;
+  margin:0 auto 0;
+}
+
+.full-body {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  top: 200px;
+}
+
+.one {
+  background-color: white;
+  color: #ffbf00;
+}
+
+.one h1:hover {
+  color: black;
+}
+
+.two {
+  background-color: #ffbf00;
+  color: black;
+}
+
+.two h1:hover {
+  color: white;
+}
+
+.three {
+  background-color: black;
+  color: white;
+}
+
+.three h1:hover {
+  color: #ffbf00;
+}
+
+footer {
+  position: fixed;
+  height: 20px;
+  color: white;
+  background-color: #ffbf00;
+  z-index: 150;
+}
+
+caption {
+  color: white;
+  padding: 30px 0px;
+}
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 120px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
